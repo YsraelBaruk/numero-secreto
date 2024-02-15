@@ -58,6 +58,10 @@ function gerarNumeroAleatorio(){
     }
     if(listaDeNumerosSorteados.includes(numeroEscolhido)){
         return gerarNumeroAleatorio();
+    } else{
+        listaDeNumerosSorteados.push(numeroEscolhido);
+        console.log(listaDeNumerosSorteados);
+        return numeroEscolhido;
     }
 }
 
